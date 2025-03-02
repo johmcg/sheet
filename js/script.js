@@ -26,11 +26,16 @@ const median = nums => {
     : sorted[Math.ceil(middle)];
 }
 
+const count = nums => {
+  return nums.length
+}
+
 const spreadsheetFunctions = {
   
   sum,
   average,
   median,
+  count,
   even: nums => nums.filter(isEven),
   someeven: nums => nums.some(isEven),
   everyeven: nums => nums.every(isEven),
